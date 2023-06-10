@@ -97,6 +97,8 @@ plt.figure()
 plt.plot(all_losses)
 plt.show()
 
+plt.savefig("output/loss.png")
+
 def predict(input_line):
     print(f"\n> {input_line}")
     with torch.no_grad():
